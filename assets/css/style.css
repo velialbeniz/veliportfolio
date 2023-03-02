@@ -1,3 +1,760 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display&display=swap");
+a {
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: none;
+}
+a:focus {
+  text-decoration: none;
+}
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: 0;
+}
+
+.relative {
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.negativeIndent {
+  text-indent: -999999px;
+}
+
+.reverseFloat {
+  float: right;
+}
+
+.makeDiv {
+  display: inline-block;
+}
+
+.centeredImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.noMargin {
+  margin: 0;
+}
+
+.noMarginTop {
+  margin-top: 0;
+}
+
+.noMarginBottom {
+  margin-bottom: 0;
+}
+
+.noMarginLeft {
+  margin-left: 0;
+}
+
+.noMarginRight {
+  margin-right: 0;
+}
+
+.noPadding {
+  padding: 0;
+}
+
+.noPaddingTop {
+  padding-top: 0;
+}
+
+.noPaddingBottom {
+  padding-bottom: 0;
+}
+
+.noPaddingLeft {
+  padding-left: 0;
+}
+
+.noPaddingRight {
+  padding-right: 0;
+}
+
+.grayscale {
+  filter: grayscale(100%); /* For Webkit browsers */
+  filter: gray; /* For IE 6 - 9 */
+  -webkit-transition: all 0.4s ease; /* Transition for Webkit browsers */
+}
+
+.grayscale:hover {
+  filter: grayscale(0%);
+  filter: none;
+}
+
+.invertscale {
+  filter: invert(50%); /* For Webkit browsers */
+  filter: gray; /* For IE 6 - 9 */
+  -webkit-transition: all 0.4s ease; /* Transition for Webkit browsers */
+}
+
+.invertscale:hover {
+  filter: invert(0%);
+  filter: none;
+}
+
+/* columns of same height styles */
+.container-xs-height {
+  display: table;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.row-xs-height {
+  display: table-row;
+}
+
+.col-xs-height {
+  display: table-cell;
+  float: none;
+}
+
+@media (min-width: 768px) {
+  .container-sm-height {
+    display: table;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .row-sm-height {
+    display: table-row;
+  }
+  .col-sm-height {
+    display: table-cell;
+    float: none;
+  }
+}
+@media (min-width: 992px) {
+  .container-md-height {
+    display: table;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .row-md-height {
+    display: table-row;
+  }
+  .col-md-height {
+    display: table-cell;
+    float: none;
+  }
+}
+@media (min-width: 1200px) {
+  .container-lg-height {
+    display: table;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .row-lg-height {
+    display: table-row;
+  }
+  .col-lg-height {
+    display: table-cell;
+    float: none;
+  }
+}
+/* vertical alignment styles */
+.col-top {
+  vertical-align: top;
+}
+
+.col-middle {
+  vertical-align: middle;
+}
+
+.col-bottom {
+  vertical-align: bottom;
+}
+
+.rowNo, .contNo, .colNo {
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+@media (max-width: 767px) {
+  .hidden-xs,
+tr.hidden-xs,
+th.hidden-xs,
+td.hidden-xs {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-sm,
+tr.hidden-sm,
+th.hidden-sm,
+td.hidden-sm {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-md,
+tr.hidden-md,
+th.hidden-md,
+td.hidden-md {
+    display: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  .hidden-lg,
+tr.hidden-lg,
+th.hidden-lg,
+td.hidden-lg {
+    display: none !important;
+  }
+}
+:root {
+  scroll-behavior: auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  color: inherit;
+}
+a:active {
+  color: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+.slick-slider *:focus {
+  outline: 0;
+}
+
+.anim {
+  position: relative;
+  opacity: 0;
+  top: 30px;
+}
+.anim.play {
+  top: 0;
+  opacity: 1;
+  transition: 1s;
+}
+.anim.play.anim-del-2 {
+  transition-delay: 0.2s;
+}
+.anim.play.anim-del-4 {
+  transition-delay: 0.4s;
+}
+.anim.play.anim-del-6 {
+  transition-delay: 0.6s;
+}
+.anim.play.anim-del-8 {
+  transition-delay: 0.8s;
+}
+
+html {
+  overflow-x: hidden;
+}
+
 body {
-  background-color: red;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+  background: #000;
+  height: 3000px;
+}
+
+.dark-bg {
+  z-index: 8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  visibility: hidden;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.dark-bg.active {
+  visibility: visible;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 99;
+}
+.loading .bar {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #fff;
+}
+.loading.play .bar {
+  transition: 2s cubic-bezier(0.86, 0, 0.07, 1);
+  width: 100%;
+}
+.loading.active {
+  transition: 1s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+button {
+  margin-top: 20px;
+  border: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.09);
+  line-height: 56px;
+  padding: 0 56px;
+  transition: 0.4s;
+  font-size: 14px;
+}
+@media only screen and (max-width: 1200px) {
+  button {
+    padding: 0 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  button {
+    padding: 0 56px;
+    margin-bottom: 40px;
+    margin-top: 0;
+  }
+}
+button:hover {
+  background: rgba(255, 255, 255, 0.07);
+}
+button:hover span {
+  transform: rotate(90deg);
+}
+button span {
+  margin-left: 8px;
+  font-size: 22px;
+  transition: 0.4s;
+  position: relative;
+  display: inline-block;
+  top: 1px;
+}
+
+.bg-img, .slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/roomy.jpg);
+}
+
+.slide {
+  height: 30vh;
+}
+.slide--1 {
+  background-image: url(../img/roomy.jpg);
+}
+.slide--2 {
+  background-image: url(../img/me-img.jpg);
+}
+.slide--3 {
+  background-image: url(../img/roasting2-img.jpg);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  line-height: 90px;
+  background: #000;
+  z-index: 9;
+}
+header .logo {
+  font-size: 20px;
+}
+header nav a {
+  margin-left: 30px;
+  transition: opacity 0.4s;
+}
+header nav a:hover {
+  opacity: 50%;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  header nav a {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  header nav {
+    display: none;
+    position: fixed;
+    top: 83px;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    padding: 34px 12px 10px 12px;
+    line-height: normal;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+  }
+  header nav a {
+    display: block;
+    font-size: 16px;
+    margin-left: 0;
+    margin-bottom: 24px;
+  }
+}
+header .line {
+  height: 1px;
+  background: #fff;
+  opacity: 0;
+  transition: 0.45s;
+}
+header .menu {
+  display: none;
+  vertical-align: middle;
+  height: 26px;
+  width: 26px;
+  overflow: hidden;
+  position: relative;
+}
+header .menu span {
+  width: 26px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  transition: 0.4s;
+}
+header .menu span:nth-of-type(1) {
+  top: 4px;
+}
+header .menu span:nth-of-type(2) {
+  top: 12px;
+}
+header .menu span:nth-of-type(3) {
+  top: 20px;
+}
+@media only screen and (max-width: 767px) {
+  header .menu {
+    display: inline-block;
+  }
+}
+header.scrolled .line {
+  opacity: 1;
+}
+header.active .line {
+  opacity: 1;
+}
+@media only screen and (max-width: 767px) {
+  header.active nav {
+    display: block;
+  }
+}
+header.active .menu span:nth-of-type(1) {
+  top: 12px;
+  transform: rotate(45deg);
+}
+header.active .menu span:nth-of-type(2) {
+  left: 100%;
+}
+header.active .menu span:nth-of-type(3) {
+  top: 12px;
+  transform: rotate(-45deg);
+}
+@media only screen and (max-width: 767px) {
+  header {
+    line-height: 80px;
+  }
+}
+
+.intro {
+  padding: 300px 0 160px 0;
+  text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  .intro {
+    padding: 200px 0 100px 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .intro {
+    padding: 250px 0 140px 0;
+  }
+}
+.intro .txt .anim {
+  position: relative;
+  opacity: 0;
+  top: 30px;
+}
+.intro .txt .anim.play {
+  top: 0;
+  opacity: 1;
+  transition: 1s;
+}
+.intro .txt .anim.play.anim-del-2 {
+  transition-delay: 0.3s;
+}
+.intro .txt .sub {
+  font-family: "Playfair Display", sans;
+  font-size: 24px;
+  letter-spacing: 4px;
+}
+.intro .txt h1 {
+  font-size: 48px;
+  font-weight: 600;
+  margin: 20px 0 auto 0;
+}
+
+#projects .bg-img, #projects .slide {
+  background-position: center;
+  background-size: cover;
+  background-color: #000;
+  height: 50vh;
+}
+@media only screen and (max-width: 767px) {
+  #projects .bg-img, #projects .slide {
+    height: 25vh;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #projects .bg-img, #projects .slide {
+    height: 30vh;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #projects .bg-img, #projects .slide {
+    height: 40vh;
+  }
+}
+#projects .box {
+  display: block;
+  position: relative;
+  transition: 0.4s;
+  overflow: hidden;
+}
+#projects .box .txt {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 60px;
+  z-index: 1;
+}
+#projects .box .txt span {
+  opacity: 0.6;
+  font-weight: bold;
+}
+#projects .box .txt h3 {
+  font-size: 30px;
+  margin: 5px 0 0 0;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+}
+#projects .box:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.25;
+  transition: 0.7s;
+}
+#projects .box:hover:after {
+  opacity: 0;
+}
+@media only screen and (max-width: 767px) {
+  #projects .box {
+    margin-bottom: 40px;
+  }
+}
+
+#skills {
+  padding: 160px 0;
+}
+#skills .skill {
+  padding-top: 50px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+#skills .skill img {
+  padding-top: 16px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+}
+#skills .skill p {
+  font-size: 12px;
+}
+@media only screen and (max-width: 767px) {
+  #skills .skill p {
+    font-size: 10px;
+  }
+}
+
+#about {
+  padding: 160px 0;
+}
+#about h2 {
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+#about p {
+  padding: 50px 0 20px 0;
+}
+#about p a {
+  color: rgba(255, 255, 255, 0.2);
+  transition: 0.4s;
+}
+#about p a:hover {
+  color: #fff;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #about button {
+    margin-bottom: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+#about .resume {
+  height: calc(100vh - 100px);
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  max-width: 100%;
+  z-index: 99;
+  transition: 0.4s;
+  opacity: 0;
+  visibility: hidden;
+}
+@media only screen and (max-width: 767px) {
+  #about .resume {
+    height: 100%;
+    width: 100%;
+    left: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #about .resume {
+    height: 100%;
+    width: 100%;
+    left: 0;
+  }
+}
+#about .resume.active {
+  opacity: 1;
+  visibility: visible;
+}
+#about .resume img {
+  position: relative;
+  max-height: 100%;
+}
+#about .resume .close {
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  display: inline-block;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  z-index: 100;
+  background-image: url(../img/close.svg);
+  background-color: transparent;
+  border: 0;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #about .resume .close {
+    right: 0;
+  }
+}
+
+footer {
+  padding: 50px 0;
+}
+@media only screen and (max-width: 767px) {
+  footer {
+    padding: 20px 0;
+  }
+}
+footer .line {
+  border: 1px solid #fff;
+}
+footer .title {
+  padding: 50px 0 50px 0;
+  font-size: 26px;
+  font-family: "Playfair Display", sans-serif;
+}
+@media only screen and (max-width: 767px) {
+  footer .title {
+    padding: 20px 0 20px 0;
+  }
+}
+footer .mail {
+  padding-top: 50px;
+  text-decoration: underline;
+}
+footer .bottom {
+  padding-top: 50px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+footer .bottom .copy {
+  font-size: 14px;
+}
+@media only screen and (max-width: 767px) {
+  footer .bottom {
+    padding-top: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
