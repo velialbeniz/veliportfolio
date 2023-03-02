@@ -6,6 +6,7 @@
     scroll-behavior: auto;
 }
 
+
 img {
     max-width: 100%;
 }
@@ -67,8 +68,6 @@ body {
     font-size: 16px;
     overflow-x: hidden;
     background: #000;
-    height: 3000px;
-
 }
 
 .dark-bg {
@@ -137,6 +136,9 @@ button{
         margin-bottom: 40px;
         margin-top: 0;
     }
+    @include sm {
+        margin-bottom: 40px;
+    }
     &:hover{
         background: rgba(255, 255, 255, 0.07);
         & span{
@@ -157,13 +159,14 @@ button{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(../img/roomy.jpg);
-
+    height: 100%;
 }
 
 .slide {
-    @extend .bg-img;
-    height: 30vh;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     &--1{
         background-image: url(../img/roomy.jpg);
     }
@@ -338,13 +341,14 @@ header {
 // projects section
 
 #projects{
-    .bg-img{
+    .box{
         background-position: center;
         background-size: cover;
         background-color: #000;
-        height: 50vh;
+        height: 40vh;
+        width: 100%;
         @include xs {
-            height: 25vh;
+            height: 35vh;
             width: 80%;
             margin: 0 auto;
         }
@@ -352,7 +356,7 @@ header {
             height: 30vh;
         }
         @include md {
-            height: 40vh;
+            height: 35vh;
         }
         
     }
@@ -402,7 +406,13 @@ header {
 // skills
 
 #skills {
-    padding: 160px 0;
+    padding: 80px 0;
+    @include sm {
+        padding: 20px 0;
+    }
+    @include md {
+        padding: 40px 0;
+    }
     .skill{
         padding-top: 50px;
         border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -424,7 +434,13 @@ header {
 //  about
 
 #about {
-    padding: 160px 0;
+    padding: 80px 0;
+    @include sm {
+        padding: 20px 0;
+    }
+    @include md {
+        padding: 40px 0;
+    }
     
     h2{
         padding-bottom: 50px;
@@ -451,23 +467,14 @@ header {
         height: calc(100vh - 100px) ;
         position: fixed;
         top: 100px;
-        left: 50%;
+        right: 0;
         // transform: translate(-50%, 0);
         max-width: 100%;
         z-index: 99;
         transition: .4s;
         opacity: 0;
         visibility: hidden;
-        @include xs{
-            height: 100%;
-            width: 100%;
-            left: 0;
-        }
-        @include sm{
-            height: 100%;
-            width: 100%;
-            left: 0;
-        }
+       
         &.active{
             opacity: 1;
             visibility: visible;
@@ -488,9 +495,6 @@ header {
             background-image: url(../img/close.svg);
             background-color: transparent;
             border: 0;
-            @include md {
-                right: 0;
-            }
         }
     }
 }
